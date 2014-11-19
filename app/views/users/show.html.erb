@@ -7,9 +7,13 @@
 
 <p>
   <strong>About:</strong>
-  <%= @user.name %>
+  <%= @user.about %>
 </p>
 
+<p>
+	<strong>Email: </strong>
+	<%= @user.email %>
+</p>
 <p> This user's Board's include </p>
 	<ul>
 		<% @user.boards.each do |board| %>

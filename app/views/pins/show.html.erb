@@ -9,7 +9,6 @@
   <strong>Board:</strong>
   <%= @pin.board.name %>
 </p>
-
-
+<%= image_tag @pin.image, {height: 150} %>
 <%= link_to 'Edit', edit_pin_path(@pin) %> |
 <%= link_to 'Back', pins_path %>
