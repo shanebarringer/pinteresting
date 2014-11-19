@@ -7,8 +7,15 @@
 
 <p>
   <strong>About:</strong>
-  <%= @user.about %>
+  <%= @user.name %>
 </p>
+
+<p> This user's Board's include </p>
+	<ul>
+		<% @user.boards.each do |board| %>
+		<li> <%= board.name %> </li>
+		<% end %>
+	</ul>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

@@ -15,10 +15,12 @@ class BoardsController < ApplicationController
   # GET /boards/new
   def new
     @board = Board.new
+    @users = User.all
   end
 
   # GET /boards/1/edit
   def edit
+    @users = User.all
   end
 
   # POST /boards
